@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b9586;
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+nav ul li:hover{
+    scale: 1.05;
+}
+.contact-info {
+    text-align: right;
+    color: white;
+}
+.contact-info .phNumber{
+    font-weight: bold;
+}
+.hero {
+    background: url('../images/solar-panels-meadow\ 1.png') no-repeat center center/cover;
+    max-height: 100vh;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons .call-us,
+.hero-buttons .request-call {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero-buttons .call-us {
+    background-color: #0b9586;
+    color: #fff;
+}
+.hero-buttons .call-us:hover{
+    background-color: #fff;
+    color: #0b9586;
+}
+
+.hero-buttons .request-call {
+    background-color: #ffbb1c;
+    color: #283646;
+}
+.hero-buttons .request-call:hover{
+    background-color: #283646;
+    color: #ffbb1c;
+}
+
+
+.friendly-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 20px;
+    width: 80%;
+    max-height: fit-content;
+    margin: auto;
+}
+
+.friendly-content {
+    max-width: 50%;
+}
+
+.friendly-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.friendly-content p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.friendly-content ul {
+    list-style: none;
+}
+
+.friendly-content ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.friendly-content ul li span {
+    color: #8bc34a;
+    font-weight: bold;
+}
+
+.friendly-image {
+    position: relative;
+}
+
+.friendly-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.friendly-note {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    background-color: #ffbb1c;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    max-width: 50%;
+}
+
+
+.power-section{
+    margin: auto;
+    min-height: 70vh;
+    background: url('../images/8116\ 1.png') no-repeat center center/cover;
+    position: relative;
+}
+.power-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -55%);
+}
+.power-content h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.power-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.power-content .request-call {
+    background-color: #ffbb1c;
+    color: #283646;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.power-content .request-call:hover{
+    background-color: #283646;
+    color: #ffbb1c;
+}
+
+.solar-kits{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+}
+.solar-kits-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.solar-kits-para{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: gray;
+}
+.solar-kits-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.solar-kits-card{
+    width: 31%;
+    border: 1px solid #ebebeb;
+}
+.solar-kits-card img{
+    width: 100%;
+}
+.solar-kits-card .img-title, .solar-kits-card .img-disc, .solar-kits-card .view-products{
+    margin: 20px;
+}
+.solar-kits-card .img-disc{
+    color: gray;
+}
+.solar-kits-card .view-products{
+    letter-spacing: 1px;
+    color: #0b9586;
+    padding-right: 0;
+}
+.solar-kits-card .view-products:hover{
+    cursor: pointer;
+}
+.solar-kits-card span{
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.solar-kits-card .view-products:hover span{
+    margin-left: 18px;
+}
+
+
+.repairs-section{
+    background: url('../images/8116\ 1\ \(1\).png') no-repeat center center/cover;
+    min-height: 60vh;
+    position: relative;
+}
+.repairs-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.849);
+    min-height: fit-content;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.repairs-title{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.repairs-para{
+    font-size: 1.5rem;
+}
+
+
+.energy-section{
+    background-color: #fffcf4;
+    /* height: 100vh; */
+    padding-top: 50px;
+}
+.energy-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.energy-left{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.energy-btn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #0b9586;
+    outline: 8px solid #0b958542;
+    margin-bottom: 20px;
+}
+.energy-btn i{
+    font-size: 2rem;
+    color: #fff;
+}
+.energy-title{
+    margin-bottom: 20px;
+}
+.energy-para{
+    color: gray;
+}
+
+.energy-center{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    justify-content: space-between;
+    align-items: center;
+}
+.energy-card{
+    padding: 20px;
+    border: 1px solid #0b9586;
+    background-color: #0b958516;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.energy-center h4{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.energy-center img{
+    width: 100%;
+    border-radius: 10px;
+}
+.energy-center P{
+    margin: 10px 0;
+}
+.energy-center h5{
+    margin: 15PX 0;
+    color: #0b9586;
+}
+.energy-center h5:hover{
+    cursor: pointer;
+}
+.energy-center i{
+    color: #0b9586;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.energy-center h5:hover i{
+    margin-left: 18px;
+}
+
+
+
+.values-section{
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+}
+.values-title{
+    margin-bottom: 15px;
+}
+.values-para{
+    margin-bottom: 15px;
+}
+.values-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.values-card{
+    border: 1px solid #0b9586;
+    width: 31%;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    background-color: #f5fbf9;
+}
+.values-card i{
+    font-size: 3rem;
+    color: #0b9586;
+}
+.values-card-title, .values-card-para{
+    margin: 15px 0;
+}
+.values-card-para{
+    color: gray;
+}
+
+
+.whatTheySay{
+    width: 80%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.say-left{
+    width: 30%;
+    align-self: center;
+}
+.say-left i{
+    font-size: 3rem;
+    color: #0b9586;
+    margin-bottom: 20px;
+}
+.say-title{
+    margin-bottom: 30px;
+}
+.say-para{
+    color: gray;
+}
+.say-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #0b958516;
+    padding: 30px;
+    border-radius: 10px;
+}
+.say-right-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #0b9586;
+    font-weight: bold;
+}
+
+.points{
+    font-size: 0.5rem;
+    line-height: 1px;
+    color: #0b9586;
+}
+.points .transparent{
+    color: #0b958536;
+}
+.say-right-foot{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info{
+    display: flex;
+}
+.profile-info img{
+    margin-right: 20px;
+}
+.name-job{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-btns i{
+    font-size: 2rem;
+    color: #0b9586;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+.profile-btns i:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.footer {
+    background-color: #283646;
+    color: #ccc;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-subscribe {
+    text-align: left;
+}
+
+.footer-subscribe p {
+    margin-bottom: 10px;
+    color: #fff ;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #596573;
+    outline: 1px solid #596573;
+    margin-right: -10px;
+    background-color: #3b4857;
+    color: #ccc;
+}
+
+.subscribe-form button {
+    background-color: #ffca28;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+.subscribe-form input:hover{
+    border: 1px solid #e6f2ff;
+    outline: 1px solid #e6f2ff;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-nav a {
+    color: #596573;
+    text-decoration: none;
+}
+.footer-bottom-nav li{
+    color: #596573;
+}
+
+.footer-bottom p {
+    color: #596573;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Large devices (desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .friendly-content h2 {
+        font-size: 2em;
+    }
+
+    .power-content h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Medium devices (tablets, 992px and up) */
+@media (max-width: 992px) {
+    header {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        padding: 20px 20px 10px 20px;
+    }
+
+    nav ul {
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+
+    .hero {
+        /* height: 70vh; */
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .friendly-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .friendly-content {
+        max-width: 100%;
+    }
+
+    .friendly-image {
+        margin-top: 20px;
+    }
+
+    .solar-kits-container, 
+    .energy-container, 
+    .values-container, 
+    .whatTheySay {
+        gap: 20px;
+    }
+
+    .solar-kits-card, 
+    .energy-left, 
+    .energy-center, 
+    .values-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .power-section{
+        min-height: 100vh;
+    }
+    .power-content {
+        transform: translate(-50%, -50%);
+    }
+    .repairs-section{
+        height: 100vh;
+    }
+}
+
+/* Small devices (landscape phones, 768px and up) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .friendly-content h2 {
+        font-size: 1.8em;
+    }
+    .power-content h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .power-content p{
+        font-size: 1rem;
+    }
+
+    .energy-btn, .energy-center, .values-container {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        gap: 10px;
+        align-items: center;
+    }
+    .contact-info{
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hero {
+        height: 50vh;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p, 
+    .friendly-content p, 
+    .power-content p, 
+    .solar-kits-para, 
+    .energy-para, 
+    .values-card-para, 
+    .say-para {
+        font-size: 1em;
+    }
+
+    .hero-buttons .call-us, 
+    .hero-buttons .request-call, 
+    .power-content .request-call {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .repairs-title, .say-title {
+        font-size: 2rem;
+    }
+    .power-section{
+        margin: auto;
+        min-height: 50vh;
+        background: url('../images/8116\ 1.png') no-repeat center center/cover;
+        position: relative;
+    }
+    .solar-kits-container, .energy-container, .values-container, .whatTheySay{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .say-left, .say-right{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        width: 100%;
+    }
+    .say-left h2{
+        font-size: 1rem;
+    }
+    .say-right-foot{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .profile-btns{
+        align-self: flex-end;
+    }
+    .energy-center{
+        margin-bottom: 0;
+    }
+    .friendly-content h2, .power-content h1 {
+        font-size: 1.5em;
+    }
+
+    .friendly-content ul li, .energy-center h5 {
+        font-size: 1em;
+    }
+    .footer{
+        padding: 30px 10px;
+    }
+    .footer-container {
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-subscribe{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer-subscribe p, .footer-bottom p{
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer-nav ul, .footer-bottom-nav ul{
+        flex-direction: row;
+        gap: 0;
+        font-size: 0.75rem;
+    }
+}
